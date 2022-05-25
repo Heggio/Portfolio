@@ -13,3 +13,10 @@ function myFunction() {
       return false;
     }
   }
+
+  function ContactForm() {
+    const [state, handleSubmit] = useForm("xzbooeyd");
+    if (state.succeeded) {
+        return <p>Thanks you!</p>;
+    }
+}
