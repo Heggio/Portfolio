@@ -1,3 +1,7 @@
+body{
+  background-color: #cce0a4;
+}
+
 .imgcontainer {
     text-align: center;
     color: white;
@@ -13,6 +17,8 @@
   .helm {
       max-width: 90%;
       margin-top: 20px;
+      object-fit: cover;
+      border-radius: 15px;
   }
 
   /*color palette frome https://colorswall.com/palette/19491/ */
@@ -71,12 +77,15 @@
       text-align: left;
     }
   }
-.home-info{
+.home-info {
   text-align: center;
   margin: 100px;
+}
+.more {
+  text-align: center;
+  margin: auto;
 
 }
-
   footer
 { text-align: center;
   left: 0;
@@ -165,4 +174,23 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+.backgroundlogo1 {
+display: block;
+margin-left: auto;
+margin-right: auto;
+height: 300px;
+
+}
+
+.backgroundlogo2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  
+  }
+.backgroundlogo2:hover {
+  opacity: 0.5;
 }
