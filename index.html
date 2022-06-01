@@ -7,41 +7,53 @@
 <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <nav class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="contactme.html">Contact Me</a>
-    <a href="projects.html">Projects</a>
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="contactme.html">Contact Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </nav>
-
-<div class="imgcontainer">
-  <img class="helm" src="Images/Helm.jpg" alt="Snow">
-  <div class="centered">Coding from the countryside</div>
-</div>
-<div class="home-info">
-  <h2>William Heginbotham</h2>
-  <h3>Front End Web Developer & Sales Manager</h3>
-    <a class="btn btn-success smooth-scroll mr-2" href="contactme.html" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a>
-      <a class="btn btn-success" href="Files/William_Heginbotham_CV.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" target="_blank">Download CV</a>
-</div>
-<div class="more">
-  <a class="btn btn-success" href="aboutme.html" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" target="_blank">Click Me to find out more</a>
-</div>
-<footer>
-	<p class="footer">
-		William Heginbotham<br><br>
-		<a href="mailto:will_heg@hotmail.co.uk" target="_blank">Email us</a></p><br>
-		<a href="https://www.facebook.com/Will.Heg" class="fa fa-facebook" target="_blank"></a>
-		<a href="https://www.youtube.com/channel/UCrCcjZJtddHXDfb39BxK_YQ" class="fa fa-youtube" target="_blank"></a>
-		<a href="https://www.instagram.com/willheggy/?hl=en" class="fa fa-instagram" target="_blank"></a>
-		<a href="https://www.linkedin.com/in/willheg/" class="fa fa-linkedin" target="_blank"></a>
-    <a href="https://github.com/Heggio" class="fa fa-github" target="_blank"></a>
-    <p>
-    <span id="copyright">
-      <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-      </span>
+  <div class="imgcontainer">
+    <img class="helm" src="Images/Helm.jpg" alt="Helm">
+      <div class="centered">Coding from the countryside</div>
+  </div>
+  <div class="home-info">
+    <h2>William Heginbotham</h2>
+      <h3>Front End Web Developer & Sales Manager</h3>
+        <a class="btn btn-success smooth-scroll mr-2" href="contactme.html" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a>
+          <a class="btn btn-success" href="Files/William_Heginbotham_CV.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" target="_blank">Download CV</a>
+  </div>
+  <div class="more">
+    <a class="btn btn-success" href="aboutme.html" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" target="_blank">Click Me to find out more</a>
+  </div>
+  <footer>
+	  <p class="footer">William Heginbotham<br><br>
+		  <a href="mailto:will_heg@hotmail.co.uk" target="_blank">Email us</a></p><br>
+		  <a href="https://www.facebook.com/Will.Heg" class="fa fa-facebook" target="_blank"></a>
+		  <a href="https://www.youtube.com/channel/UCrCcjZJtddHXDfb39BxK_YQ" class="fa fa-youtube" target="_blank"></a>
+		  <a href="https://www.instagram.com/willheggy/?hl=en" class="fa fa-instagram" target="_blank"></a>
+		  <a href="https://www.linkedin.com/in/willheg/" class="fa fa-linkedin" target="_blank"></a>
+      <a href="https://github.com/Heggio" class="fa fa-github" target="_blank"></a>
+      <p>
+        <span id="copyright">
+         <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        </span>
     </p>
   </footer>
-  <script src="script.js"></script>
+  <script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
 </body>
 </html> 

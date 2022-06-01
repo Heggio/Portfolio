@@ -7,11 +7,16 @@
 <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <nav class="topnav" id="myTopnav">
-    <a href="index.html">Home</a>
-    <a href="aboutme.html" class=active >About Me</a>
-    <a href="contactme.html">Contact Me</a>
-    <a href="projects.html">Projects</a>
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html" class="active">About Me</a>
+      <a href="contactme.html">Contact Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </nav>
 <div class="home-info">
   <h2>William Heginbotham</h2>
@@ -32,11 +37,11 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">Basic Information</div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-              <div class="col-sm-8">will_heg@hotmail.co.uk</div>
+            <div class="card-body">
+                <div class="h4 mt-0 title">Basic Information</div>
+                    <div class="row mt-3">
+                        <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+                            <div class="col-sm-8">will_heg@hotmail.co.uk</div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
@@ -66,6 +71,15 @@
     </span>
   </p>
   </footer>
-  <script src="script.js"></script>
+  <script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
 </body>
 </html> 
